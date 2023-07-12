@@ -1,0 +1,11 @@
+controller:
+  image: "nickhalden007/jenkins"
+  tag: "lts-dev"
+  installPlugins: false
+  JCasC:
+    enabled: true
+    defaultConfig: false
+    configScripts:
+      welcome-message: |
+        jenkins:
+          systemMessage: Welcome to our dev server.
